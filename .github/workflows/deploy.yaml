@@ -22,4 +22,4 @@ jobs:
 
     - name: "Check if this works"
       run: |
-        echo "This is working fine"
+        echo "This is working"
