@@ -25,3 +25,7 @@ jobs:
             - name: "Convert to zip format"
               run: | 
                 zip -j test.zip ./code.py
+            
+            - name: Deploy Lambda function
+              run: |
+                  aws lambda update-function-code --function-name mynewimageprocessor --zip-file test.zip
