@@ -21,5 +21,5 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
 
     - name: "Check if this works"
-      runs: |
+      run: |
         echo "This is working fine"
