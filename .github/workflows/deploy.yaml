@@ -17,7 +17,7 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key: ${{ secrets.AWS_ACCESS_KEY }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+        aws-secret-key: ${{ secrets.AWS_SECRET_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
 
     - name: "Check if this works"
